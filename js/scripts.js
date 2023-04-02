@@ -1,4 +1,5 @@
-function romanizer(numeral) {
+function romanizer(num) {
+  const numeral = num.toUpperCase()
   if (numeral === "I") {
     return 1;
   } else if (numeral === "V") {

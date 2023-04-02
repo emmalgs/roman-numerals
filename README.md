@@ -13,3 +13,7 @@ Expected Output: 5;
 Test: "It should return the corresponding value to the symbol"
 Code: romanizer("X")
 Expected Output: 10;
+
+Test: "It should recognize the symbol regardless of capitalization"
+Code: romanizer("c");
+Expected Output: 100;
