@@ -35,5 +35,14 @@ Code: romanizer(8);
 Expected Output: "VIII";
 
 Test: "It should return IX when 9 is entered"
-Code: romanizer(8);
+Code: romanizer(9);
 Expected Output: "IX";
+
+Test: "It should return X when 10 is entered"
+Code: romanizer(10);
+Expected Output: "X"
+
+Test: "It should return XX when 20 is entered"
+Code: romanizer(20);
+Expected Output: "XX";
+
