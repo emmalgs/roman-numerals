@@ -33,3 +33,7 @@ Expected Output: "VII";
 Test: "It should return VIII when 8 is entered"
 Code: romanizer(8);
 Expected Output: "VIII";
+
+Test: "It should return IX when 9 is entered"
+Code: romanizer(8);
+Expected Output: "IX";

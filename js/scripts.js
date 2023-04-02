@@ -1,12 +1,27 @@
+const valuesArray = [
+  {
+    arabic: 9,
+    roman: "IX"
+  },
+  {
+    arabic: 5,
+    roman: "V"
+  },
+  {
+    arabic: 4,
+    roman: "IV"
+  }
+]
+
 function romanizer(num) {
   let remainder = num;
   let romanNumeral = '';
-  if (num >= 5) {
-    romanNumeral += "V";
-    remainder -= 5
-  } else if (num === 4) {
-    return "IV"
-  }
+  valuesArray.forEach(function(value) {
+    if (remainder >= value.arabic) {
+      romanNumeral += value.roman;
+      remainder -= value.arabic;
+    }
+  });
   for (let i = remainder; i > 0; i--) {
     romanNumeral += "I"
   }
