@@ -1,5 +1,7 @@
 function romanizer(num) {
-  if (num === 2) {
-    return "II"
-  } return "I"
+  let romanNumeral = '';
+  for (let i = num; i > 0; i--) {
+    romanNumeral += "I"
+  }
+  return romanNumeral;
 }
