@@ -1,4 +1,35 @@
-* TDD
+# Roman Numerator
+
+#### By Emma Gerigscott
+
+#### _A webpage that takes an arabic numeral and outputs a roman numeral_
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Test-Driven Development
+
+## Description
+
+A webpage that takes an arabic number (i.e 1, 2, 3, etc) and converts it to it's corresponding numeral. This project was made using TDD to build out the business logic functionality (test pseudocode is below).
+
+## Setup/Installations Requirements
+
+* _Clone this repository to your desktop_
+* _Navigate to the top of the directory_
+* _Open index.html in your browser_
+
+## Known Bugs
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2023 Emma Gerigscott
+
+### TDD
 
 Describe: romanizer();
 
