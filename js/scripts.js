@@ -1,5 +1,13 @@
 const valuesArray = [
   {
+    arabic: 50,
+    roman: "L"
+  },
+  {
+    arabic: 40,
+    roman: "XL"
+  },
+  {
     arabic: 10,
     roman: "X"
   },

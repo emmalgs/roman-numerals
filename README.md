@@ -46,3 +46,13 @@ Test: "It should return XX when 20 is entered"
 Code: romanizer(20);
 Expected Output: "XX";
 
+Test: "It should return LX for 40"
+Code: romanizer(40);
+Expected Output: "XL"
+
+Test: "It should return L for 50"
+Code: romanzier(50);
+Expected Output: "L";
+
+
+
