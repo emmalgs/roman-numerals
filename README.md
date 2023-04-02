@@ -2,22 +2,19 @@
 
 Describe: romanizer();
 
-Test: "It should return 1 when I is entered"
-Code: romanizer("I");
-Expected Output: 1;
+Test: "It should return I when 1 is entered"
+Code: romanizer(1);
+Expected Output: "I";
 
-Test: "It should return 5 when V is entered"
-Code: romanizer("V");
-Expected Output: 5;
+Test: "It should return V when 5 is entered"
+Code: romanizer(5);
+Expected Output: "V";
 
 Test: "It should return the corresponding value to the symbol"
-Code: romanizer("X")
-Expected Output: 10;
+Code: romanizer(10)
+Expected Output: "X";
 
-Test: "It should recognize the symbol regardless of capitalization"
-Code: romanizer("c");
-Expected Output: 100;
+Test: "It should return two symbols for a two digit number ending in zero"
+Code: romanizer(60);
+Expected Output: "LX";
 
-Test: "It should return the sum of two characters in a row"
-Code: romanizer("LX");
-Expected Output: 60;
