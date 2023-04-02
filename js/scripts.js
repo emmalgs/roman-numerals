@@ -1,9 +1,13 @@
 function romanizer(num) {
+  let remainder = num;
   let romanNumeral = '';
-  if (num === 4) {
+  if (num >= 5) {
+    romanNumeral += "V";
+    remainder -= 5
+  } else if (num === 4) {
     return "IV"
   }
-  for (let i = num; i > 0; i--) {
+  for (let i = remainder; i > 0; i--) {
     romanNumeral += "I"
   }
   return romanNumeral;
