@@ -17,3 +17,7 @@ Expected Output: 10;
 Test: "It should recognize the symbol regardless of capitalization"
 Code: romanizer("c");
 Expected Output: 100;
+
+Test: "It should return the sum of two characters in a row"
+Code: romanizer("LX");
+Expected Output: 60;
