@@ -13,3 +13,7 @@ Expected Output: "II";
 Test: "It should return "III" when 3 is entered"
 Code: romanizer(3);
 Expected Output: "III"
+
+Test: "It should return "IV" when 4 is entered"
+Code: romanizer(4);
+Expected Output: "IV"
