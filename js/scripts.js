@@ -1,5 +1,29 @@
 const valuesArray = [
   {
+    arabic: 1000,
+    roman: "M"
+  },
+  {
+    arabic: 900,
+    roman: "CM"
+  },
+  {
+    arabic: 500,
+    roman: "D"
+  },
+  {
+    arabic: 400,
+    roman: "CD"
+  },
+  {
+    arabic: 100,
+    roman: "C"
+  },
+  {
+    arabic: 90,
+    roman: "XC"
+  },
+  {
     arabic: 50,
     roman: "L"
   },
@@ -30,6 +54,9 @@ const valuesArray = [
 ]
 
 function romanizer(num) {
+  if (num > 4000) {
+    return false
+  }
   let remainder = num;
   let romanNumeral = '';
   valuesArray.forEach(function(value) {
@@ -38,8 +65,5 @@ function romanizer(num) {
       remainder -= value.arabic;
     }
   });
-  for (let i = remainder; i > 0; i--) {
-    romanNumeral += "I"
-  }
   return romanNumeral;
 }
